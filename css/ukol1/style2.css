@@ -1,0 +1,14 @@
+.h1{
+    color: blue;
+    text-align: center;
+    font-size: larger;
+}
+.highlight{
+    color: orange;
+    background-color: black;
+}
+#special{
+    color: blueviolet;
+    font-size: 20px;
+
+}
