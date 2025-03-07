@@ -1,0 +1,35 @@
+p{color: blue;
+}
+
+.box{
+    width: 300px;
+    height: 100px;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padding-box{
+    background-color: hsl(300, 100%, 85%);
+
+    padding: 40px;
+}
+.border-box{
+    border: 2px solid black;
+
+}
+.margin-box{
+    background-color: aqua;
+    margin: 50px;
+    margin-left: 20px;
+}
+.complete-box{
+    background-color: green; 
+    border: 2px solid rgb(107, 48, 255);
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+  
+}

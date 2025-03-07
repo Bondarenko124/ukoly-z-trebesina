@@ -1,0 +1,17 @@
+.blok{
+    font-size: 40px;
+}
+
+.nadpis_1{
+    color: rgb(47, 0, 255);
+    font-size: 1rem;
+
+}
+.nadpis_2{
+    color: hsl(0, 37%, 35%);
+    font-size: 5vh;
+}
+.nadpis_3{
+    color: #868686;
+    font-size: 5vw;
+}
