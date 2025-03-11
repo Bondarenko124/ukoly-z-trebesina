@@ -1,0 +1,48 @@
+h1{
+    color: blue;
+}
+.inline-box{
+    display: inline;
+    width: 90px;
+    background-color: brown;
+    text-align: center;
+    padding: 5px;
+}
+.block-box{
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+    border-width: 20px;
+    height: 30px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top:  10px;
+}
+
+
+
+.relative-box{
+    position: relative;
+    border-style: dotted;
+    padding-left: 20px;
+    height: 150px;
+    padding-top: 20px;
+
+}
+
+.absolute-box{
+    position: fixed;
+
+}
+
+.float-left{
+    float: left;
+    background-color: rgb(240, 245, 223);
+
+}
+.float-right{
+    float: right;
+    background-color: gray;
+    width: 50px;
+
+}
