@@ -1,0 +1,40 @@
+.flex-container1{
+    display: flex;
+    background-color: rgb(156, 39, 127);
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-item11{
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.flex-alignmen2{
+    display: flex;
+    background-color: rgb(164, 68, 68);
+    flex-direction: row;
+}
+
+.align-item22{
+    background-color: yellowgreen;
+    align-self: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+.flex-grow3{
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.grow-item33{
+    background-color: aqua;
+    flex-grow: 4;
+    margin: 20px;
+    text-align: center;
+}
