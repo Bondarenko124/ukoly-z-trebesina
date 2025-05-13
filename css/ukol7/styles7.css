@@ -7,15 +7,19 @@
 
 .flex-item11{
     background-color: rgb(255, 255, 255);
-    margin: 20px;
+
+    padding: 90px 70px 80px 50px;
+  
+    margin: 10px;
     text-align: center;
     justify-content: space-evenly;
 }
 
-.flex-alignmen2{
+.flex-alignment2{
     display: flex;
     background-color: rgb(164, 68, 68);
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .align-item22{

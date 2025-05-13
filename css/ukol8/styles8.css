@@ -1,7 +1,42 @@
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    transition: background-color 0.3s ease;
+ li:nth-child( 2n) {
+
+background-color: rgb(226, 98, 98);
+
   }
+
+  li:before {
+
+    content: ">";
+  }
+
+input:focus{
+  border-style: dotted;
+  background-color: #00e1ff;
+  
+  border-width: 2px;
+
+}
+
+.bth {  
+padding: 50px;
+margin: 50px;
+background-color: blue;
+color: white
+ }
+   
+.btn:hover {
+    background-color: #00e1ff
+  }
+
+ .bth:active {
+
+    background-color: #c71919
+ }
+
+
+ a:not(.bth) {
+
+padding: 2px;
+margin: 2px;
+background-color: rgb(255, 255, 255);
+ }
