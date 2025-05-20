@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: rgb(46, 179, 88);
+    text-decoration: none;
+}
