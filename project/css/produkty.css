@@ -7,7 +7,7 @@ a{
     color: rgb(46, 179, 88);
     text-decoration: none;
 }
-.header{
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
