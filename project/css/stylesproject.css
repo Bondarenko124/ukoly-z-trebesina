@@ -1,28 +1,154 @@
-body{
+body {
     background-color: black;
-    color: #882323;
+    color: #51ff00;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
-a{
+
+a {
     color: rgb(46, 179, 88);
     text-decoration: none;
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 40px; /* Збільшено відступи */
     position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
 }
-.logo{
-    height: 10px;
+
+.logo {
+    height: 100px; /* Висота логотипу */
 }
-.menu{
+
+.menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.menu li{
+
+.menu li {
     margin-left: 20px;
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: rgb(46, 179, 88);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(36, 139, 68);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 61, 61);
+    height: calc(100vh - 80px); /* Висота з урахуванням заголовка */
+    padding-top: 200px; /* Простір для фіксованого заголовка */
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.main-image {
+    width: 1500px; /* Ширина зображення */
+    height: auto; /* Автоматична висота */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(46, 179, 88);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    padding-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.spacer {
+  height: 150vh; /* Висота для прокрутки */
+}
+
+.drink-container {
+  position: sticky;
+  top: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.drink {
+  width: 120px;
+  transition: transform 0.3s ease-out;
+}
+
+@layer support {
+  @supports (animation-timeline: scroll()) {
+
+    /* Створюємо timeline, прив’язаний до прокрутки */
+    @scroll-timeline scrollDiag {
+      source: auto;
+      orientation: block;
+    }
+
+    .drink {
+      animation: moveDrink 4s linear;
+      animation-timeline: scrollDiag;
+      animation-fill-mode: both;
+    }
+
+    @keyframes moveDrink {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(-300px, -600px);
+    }}}}
