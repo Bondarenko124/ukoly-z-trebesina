@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="H:\pga2d\css\style.css">
+    <link rel="stylesheet" href="../ukoly-z-trebesina/style.css">
   </head>
   <body>
         <h1 class="zakladni">Zakladni formatovani textu<h1>  
@@ -40,17 +40,30 @@
         </ul>
         </div>
         
-        <table border="1">
+        <table>
         <tr>
         
         <th>Slouopec 1</th>
         <th>Slouopec 2</th>
         <th>Slouopec 3</th>
         </tr>
+
         <tr>
-        
+        <td colspan="3">Neco 1</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">neco2</td>
+          <td>neco 3</td>
+          <td>neco 5</td>
+        </tr>
+
+        <tr>
+          <td>neco4</td>
+          <td>neco6</td>
         </tr>
              </table>
+
         <div>
             <h5>Folmular</h5>
 
@@ -79,11 +92,15 @@
             <option value="orange">Pomarancova</option>
             <option value="purple">Fialova</option>
             </select><br><br>
-            
-            
-            <label for="cislo">Zadej cislo:</label>
+        </div>
+        <div>
+          <textarea name="komentar" rows="4" cols="50" placeholder="Napis komentar"></textarea>
+
+          <label for="cislo">Zadej cislo:</label>
             <input type="number" id="cislo" name="cislo"><br><br>
-             
+        </div>
+
+        <div>
              <label for="datum">Zadej datum:</label>
              <input type="date" id="datum" name="datum"><br><br>
              
@@ -91,9 +108,7 @@
              <input type="range" id="hodnota" name="hodnota" min="0" max="100"><br><br>
              
              <button type="submit">Stiskni</button>
-            
         </div>
-        
-        
+
   </body>
 </html>
