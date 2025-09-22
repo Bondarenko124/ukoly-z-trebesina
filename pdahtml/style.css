@@ -1,0 +1,31 @@
+.zakladni{
+text-decoration: underline;
+color: blue;
+}
+.paragraf{
+font-size: 14px;
+color: red;
+text-decoration: none;
+}
+.odradkovani{
+text-decoration: none;
+font-size: 14px;
+}
+.fotka{
+font-size: 14px;
+text-align: center;
+text-decoration: none;
+
+}
+.fotka{
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+}
+/* CSS Document */
