@@ -1,0 +1,49 @@
+body{
+    background-color: purple;
+}
+
+.prvniobsah{
+    width: 500px;
+    height: 500px;
+    border: 5px dotted rgb(255, 196, 0);
+    position: relative;
+    top: 70px;
+}
+p{
+    margin: 10px;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+}
+img{
+    width: 120px;
+    margin: 10px;
+    float: right;
+}
+.tabulka{
+    margin-left: 140px;
+    color: rgb(255, 16, 16);
+    border: 3px solid rgb(255, 255, 255);
+}
+ tr, th{    
+    border: 2px double white;
+}
+
+
+
+.registr{
+    color: aliceblue;
+    width: 250px;
+    height: 500px;
+    margin-left: 520px;
+    border: 5px dashed rgb(59, 105, 37);
+    position: absolute;
+    top: 70px;
+    padding: 20px;
+}
+.formular{
+    margin: 8px;
+}
+h1{
+    text-align: center;
+    color: black;
+}
