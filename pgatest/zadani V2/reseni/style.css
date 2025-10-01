@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(51, 207, 255);
+}
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+.formular{
+    margin-left: 20px;
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    border: 4px double red;
+    padding: 10px;
+}
+
+.komentar{
+    width: 220px;
+    height: 160px;
+}
+
+img{
+    width: 120px;
+    height: auto;
+    float: right;
+    margin: 10px;
+}
+.zelva{
+    position: absolute;
+    margin-left: 320px;
+    width: 500px;
+    height: 500px;
+    border: 4px dashed yellow;
+    padding: 10px;
+}
