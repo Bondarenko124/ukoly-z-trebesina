@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index number 6</title>
+    <script>
+        function spistiSePoKliknuti()
+        {
+        //alert("kliknul tlacitko")
+        //Najdu dany html prvek na strance pomoci ID
+        let formularovyPrvek = document.getElementById("cisloInput");
+        //alert(typeof formularovyPrvek)
+        //Podivam se na hodnotu atributu value u daneho form, prvku
+        //tam naleznu to, co do daneho inputu zadal uyivatel
+        let ciselnyVstup = formularovyPrvek.value*1;
+        alert(typeof ciselnyVstup);
+        }
+
+    </script>
+</head>
+<body>
+<form action="">
+    <label for="cisloInput">Zadej cislo: </label>
+    <input type="number" id="cisloInput" value="67">
+    <input type="button" value="Spustit" onclick="spistiSePoKliknuti()">
+</form>
+    
+</body>
+</html>
