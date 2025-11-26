@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SudeNeboLiche()
+    {
+
+        let cislo = parceInt(document.getElementById("vstup").value);
+        let zaohruhleneCislo = parceInt(cislo;)
+        //zjistime jestli cislo - zaokruhleneCislo je ruzne od 0
+        if(cislo=zaohruhleneCislo !=0){
+            alert("Musis zadat te cislo");
+            return;
+        }
+        if (cislo % 2 == 0){
+            alert("Cislo je sude");
+        }
+        else {
+            alert("Cislo je liche");
+        }
+    }
+    </script>
+</head>
+<body>
+    <label>Zadej cislo: </label><input type="number" id="vstup">
+    <input type="button" value="start!" onclick="SudeNeboLiche()">
+</form>
+    
+</body>
+</html>
