@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+
+      let stromecekSviti = false;
         function rozsvitiStromek()
         {
-            let stromecek = document.getElementById("obrazek")
-            stromecek.src="sviti.webp"
+            let stromecek = document.getElementById("obrazek");
 
+            if (stromecekSviti == false)
+        {
+            stromecek.src = "../js/vanocni.jpg"
+            stromecekSviti = true;
         }
+        else {
+            stromecek.src ="../js/sviti.webp"
+            stromecekSviti = false;
+        }
+            
+    
+    }
     </script>
 </head>
 <body>

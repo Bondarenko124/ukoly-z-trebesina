@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snehulak</title>
+    <script>
+
+      let zvetsiSnehulak = false;
+        function rozsvitiStromek()
+        {
+            let snehulak = document.getElementById("obrazek");
+
+            if (zvetsiSnehulak == false)
+        {
+            snehulak.style = "height: 110%"
+            zvetsiSnehulak = true;
+        }
+        else {
+            snehulak.style =""
+            zvetsiSnehulak = false;
+        }
+    
+    }
+    </script>
+</head>
+<body>
+    <img src="../js/snehulak.png" style="height: 350px; width: 200px;" alt="snehulak" id="obrazek" onClick="zvetsiSnehulak()">
+
+
+</body>
+</html>
