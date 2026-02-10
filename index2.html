@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let fontSize = 16;
+    function zvetseni(){
+      fontSize *= 1.5;
+      let odstavec = document.getElementById("odstavec");
+      odstavec.style.fontSize = fontSize + "px";
+
+    }
+
+    function zmenseni(){
+      fontSize /= 1.5;
+      let odstavec = document.getElementById("odstavec");
+      odstavec.style.fontSize = fontSize + "px";
+
+    }
+  </script>
+</head>
+<body>
+    <input type="button" value="zvetseni textu" onclick="zvetseni()">
+    <input type="button" value="zmetseni textu" onclick="zmenseni()">
+    <p id="odstavec">Neco</p>
+</body>
+</html>

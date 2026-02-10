@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function scitaniStop() {
+    let soucet = 0;
+
+    while (true) {
+        let vstup = prompt("Zadej číslo nebo STOP pro ukončení:");
+
+        if (vstup === "STOP") {
+            break; // Okamžitě ukončí cyklus while
+        }
+
+        let cislo = parseFloat(vstup);
+        if (!isNaN(cislo)) {
+            soucet += cislo;
+        }
+    }
+
+    alert("Celkový součet všech čísel je: " + soucet);
+}
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

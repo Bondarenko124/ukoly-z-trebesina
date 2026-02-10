@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function functionn() 
+    {
+      let vypis = document.getElementById("odstavec");
+            //vypis.innerHTML = vypis.innerHTML + "<br> ahoj";
+            //Následující řádek má stejný význam jako předchozí, jen je zápis zkrácen
+            vypis.innerHTML = vypis.innerHTML + "Ahoj, svete ";
+    }
+  </script>
+</head>
+<body>
+  <form><input type="button" value="Start!" onclick="functionn()"></form>
+   <form><p id="odstavec"> Čao </p>
+  </form>
+</body>
+</html>

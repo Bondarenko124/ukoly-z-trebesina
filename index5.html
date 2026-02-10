@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function cisloplus(){
+      let element = document.getElementById("odstavec");
+      let cislo = parseInt(element.innerHTML);
+      element.innerHTML = cislo + 1;
+
+
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <input type="button" value="Start!" onclick="cisloplus()">
+  </form>
+  <p id="odstavec" type="number">7</p>
+</body>
+</html>

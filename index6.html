@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+  function kdyz(){
+    let n = parseInt(prompt("zadej cislo do ktereho chcesh vypis"));
+    let element = document.getElementById("odstavec");
+    for (let i = 1;  i <= n;  i++){
+      element.innerHTML += i + " ";
+    }
+        }
+    </script>
+ </head>
+ <body onload="kdyz()">
+
+  <p id="odstavec"></p>
+</body>
+</html>

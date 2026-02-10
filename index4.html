@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function controlCisla() {
+      let cislo = document.getElementById("vstup").value*1;
+          let zaokrouhleneCislo = parseInt(cislo);
+          //zjistíme, jestli cislo-zaokrouhleneCislo je různé od 0:
+          if(cislo-zaokrouhleneCislo != 0)
+          {
+              alert("Musíš zadat celé číslo!");
+              return;
+          }
+          else if (cislo < 0)
+          {
+              alert("Cislo musi byt vetsi 0");
+              return;
+          }
+            alert("Cislo je platne!")
+          
+}
+
+  </script>
+</head>
+<body>
+  <form>
+        <label>Zadej číslo:</label><input type="number" id="vstup">
+        <input type="button" value="Start!" onclick="controlCisla()">
+    </form>
+</body>
+</html>

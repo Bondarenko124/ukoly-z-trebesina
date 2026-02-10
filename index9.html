@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function prumer() {
+    let n = parseInt(prompt("Kolik čísel chceš zadat?"));
+    let soucet = 0;
+
+    for (let i = 0; i < n; i++) {
+        let cislo = parseFloat(prompt("Zadej " + (i + 1) + ". číslo:"));
+        soucet += cislo;
+    }
+
+    let vysledek = soucet / n;
+    alert("Aritmetický průměr je: " + vysledek);
+}
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function zmenaBarvyOdstavce(){
+      let r = document.getElementById("vstup1").value;
+      let g = document.getElementById("vstup2").value;
+      let b = document.getElementById("vstup3").value;
+      let text = document.getElementById("odstavec");
+      text.style.color = "rgb(" + r + ", " + g + ", " + b + ")";
+      if ( r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255) {
+        alert("Dejte cisla v intrvalu od 0 do 255");
+        return; 
+      }
+
+    }
+
+  </script>
+</head>
+<body>
+  <form>
+  <label>Zadej číslo R:</label><input type="number"  min="0" max="255" value="0" id="vstup1">
+  <label>Zadej číslo G:</label><input type="number"min="0" max="255" id="vstup2" value="0">
+  <label>Zadej číslo B:</label><input type="number" min="0" max="255" id="vstup3" value="0">
+</form>
+<form>
+  <input type="button" value="Zmenit color" onclick="zmenaBarvyOdstavce()">
+  <p id="odstavec">Neco znovu</p>
+</form>
+</body>
+</html>
