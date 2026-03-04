@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Galerie</title>
+  <script>
+//function _0x36cf(_0x508dfe,_0x58dfe7){const _0x482c60=_0x482c();return _0x36cf=function(_0x36cf48,_0x2abd28){_0x36cf48=_0x36cf48-0x1bc;let _0x34f91e=_0x482c60[_0x36cf48];return _0x34f91e;},_0x36cf(_0x508dfe,_0x58dfe7);}(function(_0x14d1de,_0x4d5090){const _0x2c3f4f=_0x36cf,_0x3f3c48=_0x14d1de();while(!![]){try{const _0x43a5ae=parseInt(_0x2c3f4f(0x1bf))/0x1*(-parseInt(_0x2c3f4f(0x1c1))/0x2)+-parseInt(_0x2c3f4f(0x1c9))/0x3*(parseInt(_0x2c3f4f(0x1c6))/0x4)+parseInt(_0x2c3f4f(0x1cc))/0x5*(parseInt(_0x2c3f4f(0x1cb))/0x6)+parseInt(_0x2c3f4f(0x1d2))/0x7*(-parseInt(_0x2c3f4f(0x1c4))/0x8)+-parseInt(_0x2c3f4f(0x1bc))/0x9+-parseInt(_0x2c3f4f(0x1d0))/0xa*(-parseInt(_0x2c3f4f(0x1cd))/0xb)+-parseInt(_0x2c3f4f(0x1c5))/0xc*(-parseInt(_0x2c3f4f(0x1be))/0xd);if(_0x43a5ae===_0x4d5090)break;else _0x3f3c48['push'](_0x3f3c48['shift']());}catch(_0x526160){_0x3f3c48['push'](_0x3f3c48['shift']());}}}(_0x482c,0x761a9));function _0x482c(){const _0x172869=['obr1','24naGgyG','4922796LnHtLM','8PhxKJM','getElementById','vypis','886206yaBUXp','Pokud\x20chceš,\x20zkus\x20udělat\x20to,\x20aby\x20se\x20velikost\x20obrázku\x20měnila\x20plynule.','23184PoerBM','405VBiJbf','7675745deuHgr','innerHTML','obr2','10dZHTUi','obrazek2','2177259zmyjXM','4647438lZRUPK','height','52mVRcYD','1fciFUE','obr3','255322NWpkqf','obrazek3'];_0x482c=function(){return _0x172869;};return _0x482c();}function vyber(_0x134564){const _0x13b2f9=_0x36cf;obrazek1=document[_0x13b2f9(0x1c7)]('obrazek1'),obrazek2=document['getElementById'](_0x13b2f9(0x1d1)),obrazek3=document['getElementById'](_0x13b2f9(0x1c2));let _0x2dbc7b=document['getElementById'](_0x13b2f9(0x1c8));if(_0x134564==_0x13b2f9(0x1c3))obrazek1[_0x13b2f9(0x1bd)]=0x12c,obrazek2[_0x13b2f9(0x1bd)]=0xc8,obrazek3[_0x13b2f9(0x1bd)]=0xc8;else{if(_0x134564==_0x13b2f9(0x1cf))obrazek1[_0x13b2f9(0x1bd)]=0xc8,obrazek2[_0x13b2f9(0x1bd)]=0x12c,obrazek3[_0x13b2f9(0x1bd)]=0xc8;else _0x134564==_0x13b2f9(0x1c0)&&(obrazek1[_0x13b2f9(0x1bd)]=0xc8,obrazek2[_0x13b2f9(0x1bd)]=0xc8,obrazek3[_0x13b2f9(0x1bd)]=0x12c);}vypis[_0x13b2f9(0x1ce)]=_0x13b2f9(0x1ca);}
+ let obrazek1;
+ let obrazek2;
+ let obrazek3;
+
+function nactiObrazky(){
+    let obrazek1 = document.getElementById("obr1");
+    let obrazek2 = document.getElementById("obr2");
+    let obrazek3 = document.getElementById("obr3");}
+function vyber1(){
+ 
+     obr1.height = "400";
+     obr2.height = "200";
+     obr3.height = "200";
+
+    }
+     
+ function vyber2(){
+  
+     obr1.height = "200";
+     obr2.height = "400";
+     obr3.height = "200";
+  
+  }
+
+  function vyber3(){
+     obr1.height = "200";
+     obr2.height = "200";
+     obr3.height = "400";}   
+  </script>
+  </head>
+  <body onload="nactiObrazky()">
+  <h2>Klikni na obrázek:</h2><br>
+  <img src="obr1.jpg" alt="Obrázek simpsonovi" height="200" style="margin:10px" onclick="vyber1()" id="obrazek1">
+  <img src="obr2.jpg" alt="Obrázek simpsonovi" height="200" style="margin:10px" onclick="vyber2()" id="obrazek2">
+  <img src="obr3.jpg" alt="Obrázek simpsonovi" height="200" style="margin:10px" onclick="vyber3()" id="obrazek3">
+
+    <p id="vypis"></p>
+  </body>
+</html>

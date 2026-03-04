@@ -7,13 +7,45 @@
     <script>
         function minimum()
         {
-            let n = prompt("Zadej počet čísel ze kterych chces vedet nejmensi");
-            let nejmensi;
+            let n = prompt("Zadej počet čísel ze kterych chces vedet nejvetsi");
+            let nejvetsi;
             for(let i = 0; i < n; i++)
             {
-                let cislo = prompt("Zadej číslo:")*1;
+                let cislo = prompt("Zadej číslo:")*1;}
+                
+                nejvetsi = cislo
+                if (cislo > nejvetsi)
+            {
+                nejvetsi = cislo
+            }
+            }
+            alert("nejvetsi cislo se seznamu je: "+nejvetsi)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                
-                if (i === 0) //kdyz i rovna se 0 (ze uxivatel ne zadal zadny cislo) priradujeme prvni cislo(cislo) do promenne nejmensi
+               /* if (i === 0) //kdyz i rovna se 0 (ze uxivatel ne zadal zadny cislo) priradujeme prvni cislo(cislo) do promenne nejmensi
                 nejmensi = cislo
             else if (cislo < nejmensi)//ale kdyz cislo je mensi nez nejmensi cislo pred tim tak znovu priradujeme dalsi cislo do promenne
             {
@@ -22,7 +54,7 @@
             }
             
             alert("nejmensi je "+nejmensi)
-        }
+        */
 
     </script>
 </head>

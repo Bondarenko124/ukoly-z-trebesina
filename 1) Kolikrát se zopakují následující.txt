@@ -1,0 +1,25 @@
+1) Kolikrát se zopakují následující cykly?
+
+a)	for(let k = 0; k <= 5; k++) 6
+
+b)	for(let j = -1; j <= X; j++) 2 + x 
+0krat pro x z intervalu (-nekomecno; -1)
+1krat pro x = -1
+2krat pro x = 0
+3krat pro x = 1
+
+
+c)	for(let i = -5; i > -8; i--) 3krat
+
+
+2) 
+a) Napište cyklus typu for, který se zopakuje X+2-krát (kde X je číselný vstup od uživatele)
+for(let j = -1; j <= X; j++) 2 + x 
+
+
+b) Napište cyklus typu while, který se bude opakovat, dokud v proměnné X bude uložené liché číslo
+while (x % == )
+
+3) Otevřít si email s komentářem ke KC z JS a pokusit se opravit/doplnit svůj odevzdaný kód
+
+4) napsat/dopsat JS kód programu na hledání minima z n čísel (viz DÚ)
