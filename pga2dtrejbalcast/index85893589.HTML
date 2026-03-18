@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function vytvoritPrvky(){
+            let roducovskyObject = document.getElementById("stranka");
+            //vytvarime novy htnl prvek
+            let potomek = document.createElement("div");
+            potomek.style = "background-color: #00FF00; width: 50px; height: 50px;  position: absolute; left: 100px; top: 50px";
+            //dany prvek pridame na stranku - rodicovym objektem bude rodicovskyobject (txn body)
+            roducovskyObject.appendChild(potomek);
+
+
+        }
+
+         function vytvoritPrvky2(){
+            let roducovskyObject = document.getElementById("stranka");
+            for(let i = 0; i < 10; i++){
+                 //vytvarime novy htnl prvek
+            let potomek = document.createElement("div");
+            let souhradniceX = 60*i + 100 
+            potomek.style = "background-color: #00FF00; width: 50px; height: 50px;  position: absolute; left:"+souhradniceX+ "px; top: 50px";
+            //dany prvek pridame na stranku - rodicovym objektem bude rodicovskyobject (txn body)
+            roducovskyObject.appendChild(potomek);
+
+            }
+           
+
+
+        }
+    </script>
+</head>
+<body id="stranka" onload="vytvoritPrvky2()">
+    
+</body>
+</html>
