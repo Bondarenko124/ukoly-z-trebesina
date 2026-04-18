@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       /* function pridaniEmailu(){
+            let checkbox = document.getElementById("email");
+            let emailbude = document.getElementById("emaill")
+            if (checkbox.checked){
+                emailbude.style.display ='inline-block';
+                
+            }else {
+                emailbude.style.display = 'none';
+            }
+        }
+            <label for="email">Email:</label><br>
+        <input type="text" id="emaill" name="Emaill"/>
+            */
+           function pridaniEmailu()
+           {
+            let checkbox = document.getElementById("email");
+            let forma = document.getElementById("formaa")
+            if(checkbox.checked){
+                let novyInput = document.createElement("input");
+                novyInput.type = "email";
+                novyInput.id = "dynamickyEmail";
+
+                forma.appendChild(novyInput);
+            } else {
+                let emailProSmazani = document.getElementById("dynamickyEmail");
+                if(emailProSmazani){
+                    emailProSmazani.remove();
+                }            }
+
+           }
+
+    </script>
+</head>
+<body >
+     
+        <form id="formaa">
+        <label for="first_name">Jmeno:</label><br>
+        <input type="text" id="first name" name="firstName"/><br>
+
+        <label for="password">Heslo:</label><br>
+        <input type="text" id="password" name="Password"/><br>
+
+        <label>
+        <input type="checkbox" id="email" name="Email" onclick="pridaniEmailu()">
+        Napisete email?</label>
+        <button type="submit">Odeslat</button><br>
+
+        <br>
+        </form>
+</body>
+</html>
