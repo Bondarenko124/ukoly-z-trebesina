@@ -5,36 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aritmetický průměr</title>
     <script>
-        function minimum()
+        function maximum()
         {
-            let pocetCisel = parseInt(prompt("Zadej počet čísel ze kterych chces vedet nejvetsi"));
-            let maximum;
-            for(let i = 1; i < pocetCisel; i++)
+            let n = prompt("Zadej počet čísel ze kterych chces vedet nejvetsi");
+            let nejvetsi;
+            for(let i = 0; i < n; i++)
             {
-                let cislo = prompt("Zadej číslo:");}
-                
+                let cislo = prompt("Zadej číslo:")*1;
+               
+                if (i === 0) //kdyz i rovna se 0 (ze uxivatel ne zadal zadny cislo) priradujeme prvni cislo(cislo) do promenne nejmensi
                 nejvetsi = cislo
-                if (cislo > maximum)
-            {
-                maximum = cislo
-            }
-            }
-            alert("nejvetsi cislo se seznamu je: "+nejvetsi)
-
-               /* if (i === 0) //kdyz i rovna se 0 (ze uxivatel ne zadal zadny cislo) priradujeme prvni cislo(cislo) do promenne nejmensi
-                nejmensi = cislo
-            else if (cislo < nejmensi)//ale kdyz cislo je mensi nez nejmensi cislo pred tim tak znovu priradujeme dalsi cislo do promenne
+            else if (cislo > nejvetsi)//ale kdyz cislo je mensi nez nejmensi cislo pred tim tak znovu priradujeme dalsi cislo do promenne
             {
                 nejmensi = cislo
             }
             }
             
-            alert("nejmensi je "+nejmensi)
-        */
+            alert("nejvensi je "+nejvetsi)
+        }
 
     </script>
 </head>
-<body onload="minimum()">
+<body onload="maximum()">
     
 </body>
 </html>

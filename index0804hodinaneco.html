@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pole()
+        {
+            let input = document.getElementById("input").value;
+
+
+
+            /*let inputPole = new Array();
+            let pocetCisel1 = 0;
+            for(let i = 0; i, input.lengh; i++){
+                    if(input[i]==",")
+                    {
+                        inputPole = input[i-1]
+                        pocetCisel1++;
+                    }
+            }
+                    */
+
+
+
+
+            let pole = input.split(",");
+            alert(pole[2]);
+            let soucet = 0
+            for(i = 0; i < pole.lengh; i++)
+        {
+            soucet += pole[i]*1
+        }   let poceCisel = pole.lengh;
+            let prumer = soucet/poceCisel;
+            alert("prumer je"+prumer);
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input id="input"> <br>
+        <input type="button" onclick="pole()">;
+    </form>
+</body>
+</html>

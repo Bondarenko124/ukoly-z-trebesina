@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ziskejVstup(){
+            let vstup = prompt("zadej vstup")*1;
+            if(isNaN(vstup) == true)
+        {
+            alert("nezadal cislo")
+        }
+        else{
+            return vstup;
+        }
+        }
+        function soucet(cislo1,cislo2)
+        {
+            let soucet = cislo1 + cislo2;
+            return soucet;
+        }
+        function funkcePoNacteniStranky()
+        {
+           let vstup1 = ziskejVstup();
+           let vstup2 = ziskejVstup();
+           let vystup = soucet(vstup1, vstup2);
+           alert(vystup);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
