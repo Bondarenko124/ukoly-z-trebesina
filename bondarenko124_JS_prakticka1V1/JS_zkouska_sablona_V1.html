@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JS praktická V1</title>
+    <script>
+    let obr = parseFloat(document.getElementById("obrazek").value);
+        function objemUhlopricka()
+{    let hr = parseFloat(document.getElementById("hrany").value)*1;
+     let vypis = document.getElementById("odstavec");   
+     let objempocitani = hr * hr * hr;
+     let uhloprickapocitani = hr * Math.sqrt(3);
+     vypis.innerHTML = vypis.innerHTML + "Zadal jste delku hrany " + hr + ", Objem je " + objempocitani + ", uhlopricka je " + uhloprickapocitani 
+     
+     obr.src = "../bondarenko124_JS_prakticka1V1/hrana_krychle.png"
+         
+        }
+     function objemHrana(){
+    let uhl = parseFloat(document.getElementById("uhlopricka").value)*1;
+    let vypis2 = document.getElementById("odstavec2");
+    let hranapocitani = uhl / Math.sqrt(3);
+    let objempocitaniuhl = hranapocitani * hranapocitani * hranapocitani;
+    vypis2.innerHTML = vypis2.innerHTML + "Zadal jste delku uhlopricky " + uhl + ", Objem je " + objempocitaniuhl + ", hrana je " + hranapocitani 
+    obr.src = "../bondarenko124_JS_prakticka1V1/uhlopricka_krychle.png"
+}
+    
+     
+      function hranaUhlopricka(){
+    let obj = parseFloat(document.getElementById("objem").value)*1;
+    let vypis3 = document.getElementById("odstavec3");
+    let hranapocitanii = Math.pow(obj, 1/3);
+    let uhloprickapocitanii = hranapocitanii * Math.sqrt(3);
+    vypis3.innerHTML = vypis3.innerHTML + "Zadal jste objem " + obj + ", uhlopricka je " + uhloprickapocitanii + ", hrana je " + hranapocitanii 
+    obr.src = "../bondarenko124_JS_prakticka1V1/objem_krychle.png"
+        }
+
+    </script>
+    <noscript>Zapni si JavaScript ve svém prohlížeči, jinak ti program nebude fungovat!</noscript>
+</head>
+<body>
+    <h1>Praktická zkouška JS - Varianta 1 (liché číslo PC)</h1>
+    <form>
+        <input id="objem"> zadej delku objemu krychle <br>
+        <input id="uhlopricka"> zadej delku telesovy uhlopricky<br>
+        <input id="hrany"> zadej delku hrany krychle<br>
+    </form>
+    <form>
+        <input type="button" value="hrana, spocitat objem a uhlopricku" onclick="objemUhlopricka()"> 
+        <input type="button" value="uhlopricka, spocitat objem a hranu" onclick="objemHrana()"> 
+        <input type="button" value="objem, spocitat hranu a uhlopricku" onclick="hranaUhlopricka()"> 
+    </form>
+    <img src="krychle.png" id="obrazek" style="width: 200px;">
+    <p id="odstavec"></p>
+    <p id="odstavec2"></p>
+    <p id="odstavec3"></p>
+</body>
+</html>
