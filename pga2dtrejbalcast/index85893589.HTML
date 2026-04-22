@@ -18,6 +18,8 @@
 
          function vytvoritPrvky2(){
             let roducovskyObject = document.getElementById("stranka");
+            //vezmeme sirku stranky odecteme leve a prave odzaseni (100)  a pote sirku
+            let pocetCtverecku = roducovskyObject.clientWidth - 100 - 100 - 50
             for(let i = 0; i < 10; i++){
                  //vytvarime novy htnl prvek
             let potomek = document.createElement("div");
