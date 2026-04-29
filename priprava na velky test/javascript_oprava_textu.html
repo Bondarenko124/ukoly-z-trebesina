@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Oprava textu</title>
+        <script>
+            function opravText()
+            {
+                let vstup = document.getElementById("vstupniPole").value;
+                let vystupOdstavec = document.getElementById("vystup");
+                let vystup = "";
+                let vstupArray = vstup.split("");
+                for(let i = 0; i < vstup.length ; i++)
+                {
+                    if(vstupArray[i] == "ř" || vstupArray[i] == "Ř" && i < vstup.length-1)
+                    {
+                        if(vstupArray[i+1]=="y")
+                        {
+                            vstupArray[i+1] = "i";
+                        }
+                        else if(vstupArray[i+1] == "ý")
+                        {
+                            vstupArray[i+1] = "í";
+                        }
+                    }
+                    vystup += vstupArray[i];
+                }
+                vystupOdstavec.innerHTML = vystup;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Oprava textu</h1>
+        <form>
+         <textarea cols="100" rows="30" id="vstupniPole"></textarea><br>
+         <input type="button" value="Opravit text" onclick="opravText()">
+        </form>
+        <p id="vystup"></p>
+    </body>
+</html>

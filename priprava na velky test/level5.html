@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function ziskejVstup(){
+let vstup = "";//vstup je nic
+let poleHodnot = new Array();//pole hodnot je novy ten list
+let vystup = document.getElementById("odst"); //kam dame ten vysledek
+while (true){//kdyz tohle je pravda
+vstup = promt("Zadej číslo, nebo znak ! pro ukončení zadávání.")//ziskani listu
+if(vstup != "!"){//kdyz vstup je neni rovno ! tak k poli hodnot bude pridavat se vstup ktery je cislo
+poleHodnot.push(vstup*1);
+}
+else{
+break; //nebo nic
+}
+}
+poleHodnot.sort(function(a,b){return a-b}); //a-b bude jako 2,5,10; b-a bude 10,5,2
+vystup.innerHTML += poleHodnot; //vystup rovna se vystup a pole hodnot zadade uzivatelem
+
+}
+</script>
+</head>
+<body onload="ziskejVstup()">
+<p id="odst"> Zde jsou čísla ze vstupů seřazena od nejmenšího po největši:
+</p>
+</body>
+</html>

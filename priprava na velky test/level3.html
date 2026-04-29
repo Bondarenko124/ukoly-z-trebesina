@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalkulačka</title>
+<script>
+function kalkulacka()
+{
+let vstup = document.getElementById("vstupPole").value;
+let vystup = document.getElementById("vysledekPole");
+for(let i=1; i < vstup.length; i++) //i = 1 znaci ten znak pro pocitani protoze je na indexu 1
+{
+if(vstup[i] == "+")
+{
+let vstupy = vstup.split("+");
+let reseni = vstupy[0]*1 + vstupy[1]*1;
+vystup.value = reseni;
+return;
+}
+else if(vstup[i] == "-")
+{
+let vstupy = vstup.split("-");
+let reseni = vstupy[0]*1 - vstupy[1]*1;
+vystup.value = reseni;
+return;
+}
+else if(vstup[i] == "*")
+{
+let vstupy = vstup.split("*");
+let reseni = vstupy[0]*1 * vstupy[1]*1;
+vystup.value = reseni;
+return;
+}
+else if(vstup[i] == "/")
+{
+let vstupy = vstup.split("/");
+let reseni = vstupy[0]*1 / vstupy[1]*1;
+vystup.value = reseni;
+return;
+}
+}
+alert("Zadal jsi chybný vstup!");
+}
+</script>
+</head>
+<body>
+<form>
+<label for="vstupPole">Zadejte vstup ve formátu 50+10 (místo + můžete použít i -, * a /):</label>
+<input type="text" placeholder="10*225" id="vstupPole"><br>
+<input type="button" value="počítej" onClick="kalkulacka()">
+<br>
+<br>
+<label for="vysledekPole">Výsledek:</label><input type="text" placeholder="výsledek" id="vysledekPole">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Hledání MAX</title>
+  <script>
+  function vypocet()
+  {
+    let textovePole = document.getElementById("textovePole");
+    let hodnotyVPoli = textovePole.value;
+    let maximum = Number.MIN_VALUE;
+    let k = 1;
+    for(let i = 0; i < hodnotyVPoli.length; i++ )
+    {
+        if(hodnotyVPoli[i] == "," && i > 0)
+        {
+            let cislo = "";
+            for(let j = i-k+1; j < i ; j++)
+            {
+                cislo += hodnotyVPoli[j];
+            }
+            k = 0;
+
+            if(cislo*1 > maximum)
+            {
+                maximum = cislo*1;
+            }
+            cislo = ""
+        }
+        k++;
+    }
+    alert("Maximum je " + maximum);
+  }
+  </script>
+  </head>
+  <body>
+  Zadej nezáporná (klidně víceciferná) čísla ve formátu: číslo1,číslo2,...,čísloN,
+  <form>
+  <textarea rows="40" cols="200" id="textovePole"></textarea><br>
+  <input type="button" value="Najdi maximum" onclick="vypocet();">
+  </form>
+  </body>
+</html>

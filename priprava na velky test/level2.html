@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+let pozdrav = "Ahoj! Jak se mas?"
+let i = 0
+function vypisPozdrav(){
+//udelany noveho prvku
+let vystup = document.getElementById("odstavec")
+//vystup + jedno pismeno za indexem
+vystup.innerHTML += pozdrav[i];
+//vypsalo jeden znak, plus jeden dalsi
+i++;
+//kdyby i rovnalo se dlouzke pozdrav to musi se obnovit jako znovu a vratit se na zacatek
+if( i == pozdrav.length){
+i = 0;
+return;
+
+}//delat funcki kazdu sekundu
+setTimeout("vypisPozdrav()", 1000)
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="vypis pozdrav" onclick="vypisPozdrav()">
+</form>
+<p id="odstavec">zde ti vypise pozdrav: </p>
+
+</body>
+</html>

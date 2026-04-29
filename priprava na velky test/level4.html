@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="PSPad editor, www.pspad.com">
+<title>kvadraticka rovnice</title>
+<script>
+function diskriminant(a, b, c)
+{let d;
+d=b*b-4*a*c; //vyjadreni diskriminanta
+ 
+return d;
+} //vraci dis
+ 
+function vypocet()
+{let a, b, c, x, dis; //pridani novych hodnot
+ 
+a = avstup.value*1;
+b = bvstup.value*1;
+c = cvstup.value*1;
+ 
+if(a==0 && b==0 && c==0) //kdyz a je 0 a zaroven b je 0 a zaroven c je 0
+{//ve odastavec vypise tohle
+odst.innerHTML+="Řešením rovnice: "+a+"x<sup>2</sup>+"+b+"x+"+c+"=0 <br> Tato rovnice má nekonečně mnoho řešení. <br>";
+}
+else
+{
+if(a==0 && b==0)//kdyz a a zaroven b
+{
+odst.innerHTML+="Řešením rovnice: "+a+"x<sup>2</sup>+"+b+"x+"+c+"=0 <br> Tato rovnice nemá řešední <br>";
+}
+else
+{
+if(a==0)
+{
+odst.innerHTML+="Řešením rovnice: "+a+"x<sup>2</sup>+"+b+"x+"+c+"=0 <br> Tato rovnice je lineární <br>";
+x = -c/b;
+odst.innerHTML+="Řešení: x = "+x+"<br>";
+}
+else
+{
+dis = diskriminant(a, b, c);
+if(dis < 0)
+{
+odst.innerHTML+="Řeším rovnici: "+a+"x<sup>2</sup>+"+b+"x+"+c+"=0 <br> Rovnice nemá reálné řešení <br>";
+}
+else
+{
+odst.innerHTML+="Řeším rovnici: "+a+"x<sup>2</sup>+"+b+"x+"+c+"=0 <br>";
+if(dis == 0)
+{
+x=(-b)/(2*a);
+odst.innerHTML+="Řešení: x = "+x+"<br>";
+}
+else
+{
+dis = Math.sqrt(dis);
+x = (-b + dis)/(2*a);
+odst.innerHTML+="Řešení: <br> x<sub>1</sub> = "+x+"<br>";
+x = (-b - dis)/(2*a);
+odst.innerHTML+="x<sub>2</sub> = "+x+"<br>";
+}
+}
+}
+}
+ 
+}
+odst.innerHTML+="_____________________________ <br><br>";
+}
+ 
+</script>
+</head>
+<body>
+ 
+<h3>Výpočet kvadratické rovnice</h3>
+<p>Zadejte parametry a,b,c pro kvadratickou rovnici v anulovaném tvaru: <b> ax<sup>2</sup>+bx+c=0 </b></p>
+ 
+<form>
+Zadej parametr a: <input type="number" id="avstup"> <br>
+Zadej parametr b: <input type="number" id="bvstup"> <br>
+Zadej parametr c: <input type="number" id="cvstup"> <br>
+<input type="button" value="Spočítej" onclick="vypocet()">
+</form>
+ 
+<p id="odst">
+ 
+</p>
+
+</body>
+</html>
