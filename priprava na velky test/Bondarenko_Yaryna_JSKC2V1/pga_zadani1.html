@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Zadání 1 - šibenice</title>
+    <script>
+
+            let pole = [];
+        function ziskejSlovo(){
+            let vstup = prompt("Zadej slovo na 4-7 znaku ktery bude hleadat tvuj nekdo");
+            let vystupOdstavec = document.getElementById("odst");
+            for (let i = 0; i < vstup.length; i++){
+                pole[i] = vstup[i];
+            }
+            
+            pole[1] = "_ ";
+            pole[2] = "_ ";
+            pole[3] = "_ ";
+            pole[4] = "_ ";
+            pole[5] = "_ "; 
+           // let removed = pole.shift() - nejak pomoci toho 
+           // let removedd = pole.pop() -  nejak pomoci toho
+          
+            let vystup = "";
+            for (let i = 0; i < pole.length; i++)
+            {
+                vystup = vystup + pole [i];
+            }
+          // for(i = 0; pole[i] = "_"; i++){
+          // let removed = pole.shift()  
+           //let removedd = pole.pop() 
+         // }
+
+            vystupOdstavec.innerHTML = vystup;
+
+        } 
+        function checkniVstup(){
+            
+            let vstupFor = document.getElementById("vstupFormular");
+            let i = 0;
+            if (vstupFor[i] == pole[i]){
+                
+            }
+            else  {
+                let obr = document.getElementById("obrazek");
+                obr.src = "sibenice/1.png"
+                obr.src = "sibenice/2.png"
+                obr.src = "sibenice/3.png"
+                obr.src = "sibenice/4.png"
+                obr.src = "sibenice/5.png"
+            }
+            
+        }
+
+        
+
+    </script>
+</head>
+<body onload="ziskejSlovo()">
+    <h1>Šibenice</h1>
+    <p id="odst"></p>
+    <form>
+        <label for="vstupFormular">Zadej písmeno, nebo celé slovo:</label><input type="text" id="vstupFormular" /><br />
+        <input type="button" value="Odeslat pokus" onclick="checkniVstup()"/>
+    </form>
+    <div style="font-size:50px; margin:auto; text-align:center;" id="vystupDiv">
+ 
+    </div>
+    <img src="sibenice/0.png" alt="šibenice" id="obrazek"/>
+</body>
+</html>
